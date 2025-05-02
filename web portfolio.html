@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Muhammad Ibrohim | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2b6cb0;
+      --secondary: #2d3748;
+      --accent: #3182ce;
+      --light-bg: #f0f4f8;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --btn-hover-bg: #2563eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e0f2fe, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      animation: slideUp 1s ease-out;
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #c3dafe;
+      padding-bottom: 0.5rem;
+    }
+
+    /* === Men Haqimda Qismi === */
+    .about p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: var(--secondary);
+    }
+
+    /* === Ko'nikmalar === */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding-top: 1rem;
+    }
+
+    .skills .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px var(--shadow);
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      border-left: 5px solid var(--accent);
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .skills .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+      background-color: var(--light-bg);
+    }
+
+    /* === Button Hover === */
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 10px 25px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 30px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--btn-hover-bg);
+      transform: translateY(-5px);
+    }
+
+    /* === Kontakt Bo'limi === */
+    .contact {
+      text-align: center;
+      padding-top: 2rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 1rem 2rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: var(--btn-hover-bg);
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Muhammad Ibrohim Nigmatov</h1>
+    <p>Dasturchi | Telegram Botlar | Web Ilovalar | Excel Avtomatlashtirish</p>
+  </header>
+
+  <div class="container">
+    <!-- Men Haqimda -->
+    <section class="about">
+      <h2>Men haqimda</h2>
+      <p>Assalomu alaykum! Men — Nigmatov Muhammad Ibrohim, yosh bo‘lishimga qaramay, IT sohasida faoliyat yuritib kelayotgan dasturchiman.</p>
+      <p>Mutaxassisligim quyidagi yo‘nalishlarni qamrab oladi:</p>
+      <ul>
+        <li>Python dasturlash tili</li>
+        <li>Telegram botlar va avtomatlashtirilgan tizimlar yaratish</li>
+        <li>Veb-saytlar bilan ishlash</li>
+        <li>Kompyuter savodxonligi (o‘qituvchilik tajribasi bilan)</li>
+        <li>PowerPoint taqdimotlar tayyorlash</li>
+        <li>Ingliz tili — B1 daraja (xalqaro sertifikat imtihonlariga tayyorgarlik bosqichida)</li>
+      </ul>
+      <a href="https://t.me//+78Z_nIZoCZ4wZmZi" class="btn" target="_blank">Mening Telegram kanalimga o'ting</a>
+    </section>
+
+    <!-- Ko'nikmalar -->
+    <section class="skills">
+      <h2>Ko'nikmalar</h2>
+      <div class="card">Python</div>
+      <div class="card">HTML & CSS</div>
+      <div class="card">Telegram Botlar</div>
+      <div class="card">Excel avtomatlashtirish</div>
+      <div class="card">PowerPoint</div>
+      <div class="card">Ingliz tili (B1)</div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="contact">
+      <h2>Biz bilan bog‘laning</h2>
+      <a href="mailto:nigmatov787@example.com">Email orqali yozing</a>
+      <a href="https://t.me/zxccxzmi" target="_blank">Telegram orqali bog'laning</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn profilim</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Ibrohim Nigmatov</p>
+  </footer>
+
+</body>
+</html>
